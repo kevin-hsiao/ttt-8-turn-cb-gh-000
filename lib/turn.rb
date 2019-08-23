@@ -11,7 +11,7 @@ def input_to_index(input)
 end
 
 def valid_move?(board, index)
-  if index >= 0 && index <= 8 && !position_taken?(board, index)
+  if index >= 0 && index < board.length && !position_taken?(board, index)
     TRUE
   else
     FALSE
@@ -32,3 +32,5 @@ end
 
 def turn
 end
+
+
